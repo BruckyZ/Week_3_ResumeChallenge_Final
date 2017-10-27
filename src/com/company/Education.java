@@ -5,15 +5,21 @@ import java.util.ArrayList;
 
 public class Education
 {
-	public Education()
+	public Education()                  //CONSTRUCTOR
 	{
 
 	}
+
+	private String DegreeCompleted;
+	private String UniversityName;
+	private String YearsCompleted;
+
+
 
 	public String getDegreeCompleted()
 	{
 		return DegreeCompleted;
-	}
+	}                   //GETTER&SETTER
 
 	public void setDegreeCompleted(String degreeCompleted)
 	{
@@ -40,26 +46,8 @@ public class Education
 		YearsCompleted = yearsCompleted;
 	}
 
-	private String DegreeCompleted;
-	private String UniversityName;
-	private String YearsCompleted;
-	private ArrayList<Experiance>experiancelevel= new ArrayList<Experiance>();
 
 
-	public ArrayList<Experiance> getExperiancelevel()
-	{
-		return experiancelevel;
-	}
-
-	public void setExperiancelevel(ArrayList<Experiance> experiancelevel)
-	{
-		this.experiancelevel = experiancelevel;
-	}
-
-	public void addExperiance(Experiance aExperiance)
-	{
-		experiancelevel.add(aExperiance);
-	}
 }
 
 

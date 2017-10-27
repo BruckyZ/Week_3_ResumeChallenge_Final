@@ -4,19 +4,26 @@ import java.util.ArrayList;
 
 public class Experiance
 {
-	public Experiance()
-	{
+	Skills skill;
 
+	public Skills getSkill()
+	{
+		return skill;
 	}
 
+	public void setSkill(Skills skill)
+	{
+		this.skill = skill;
+	}
+
+
+	private ArrayList<Skills>skillstype= new ArrayList<Skills>();       //ARRAYLIST FOR SKILLS
 	private String JobTittle;
 	private String CompanyName;
 	private String YearsWorked;
 	private String Duty;
-	private ArrayList<Skills>skillstype= new ArrayList<Skills>();
 
-
-	public ArrayList<Skills> getSkillstype()
+	public ArrayList<Skills> getSkillstype()        //GETTER&SETTER
 	{
 		return skillstype;
 	}
@@ -79,7 +86,7 @@ public class Experiance
 		Duty = duty;
 	}
 
-	public void addSkills(Skills aSkills)
+	public void addSkills(Skills aSkills)                       //ADDED SKILLS INTO EXPERIANCE
 	{
 		skillstype.add(aSkills);
 	}

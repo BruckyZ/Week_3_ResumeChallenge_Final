@@ -2,7 +2,16 @@ package com.company;
 
 public class Skills
 {
-	public String getSkilledType()
+
+	public Skills()     //Empty Constructor
+	{
+
+	}
+
+	private String SkilledType;
+	private String Proffesional_Level;
+
+	public String getSkilledType()      //GETTER AND SETTER
 	{
 		return SkilledType;
 	}
@@ -24,7 +33,6 @@ public class Skills
 		Proffesional_Level = proffesional_Level;
 	}
 
-	private String SkilledType;
-	private String Proffesional_Level;
+
 
 }
